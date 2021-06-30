@@ -1,0 +1,9 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "blink-springboot-petstore-api"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-f5ztkc3hr18i"
+s3_prefix = "blink-springboot-petstore-api"
+region = "us-west-2"
+capabilities = "CAPABILITY_IAM"
