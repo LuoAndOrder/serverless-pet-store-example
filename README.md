@@ -6,15 +6,13 @@ The application can be deployed in an AWS account using the [Serverless Applicat
 ## Pre-requisites
 * [AWS CLI](https://aws.amazon.com/cli/)
 * [SAM CLI](https://github.com/awslabs/aws-sam-cli)
-* [Gradle](https://gradle.org/) or [Maven](https://maven.apache.org/)
+* [Maven](https://maven.apache.org/)
 
 ## Deployment
-In a shell, navigate to the sample's folder and use the SAM CLI to build a deployable package
+In a shell, navigate to the sample's folder and use Maven to build a deployable package
 ```
-$ sam build
+$ mvn clean package
 ```
-
-This command compiles the application and prepares a deployment package in the `.aws-sam` sub-directory.
 
 To deploy the application in your AWS account, you can use the SAM CLI's guided deployment process and follow the instructions on the screen
 
